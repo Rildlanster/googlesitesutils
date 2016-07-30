@@ -6,7 +6,7 @@
   <EnumValue value="button" display_value="Button [47x20]"/>
 </UserPref>
 <UserPref name="width" display_name="Width:" datatype="string" default_value=""/>
-<UserPref name="share" display_name="Show Share button:" datatype="enum" default_value="false">
+<UserPref name="share" display_name="Show Share button:" datatype="enum" default_value="true">
   <EnumValue value="false" display_value="No"/>
   <EnumValue value="true" display_value="Yes"/>
 </UserPref>
