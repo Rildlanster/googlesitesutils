@@ -7,7 +7,7 @@
   <EnumValue value="box_count" display_value="Box Count"/>
   <EnumValue value="button" display_value="Button"/>
 </UserPref>
-<UserPref name="showfaces" display_name="Show Faces (increase gadget height to 85px):" datatype="enum" default_value="false">
+<UserPref name="showfaces" display_name="Show Faces:" datatype="enum" default_value="false">
   <EnumValue value="false" display_value="No"/>
   <EnumValue value="true" display_value="Yes"/>
 </UserPref>
