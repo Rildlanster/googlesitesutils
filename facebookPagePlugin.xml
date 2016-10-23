@@ -10,6 +10,8 @@
   <EnumValue value="false" display_value="No"/>
   <EnumValue value="true" display_value="Yes"/>
 </UserPref>
+<UserPref name="width" display_name="Page width:" datatype="string" default_value=""/>
+<UserPref name="height" display_name="Page height:" datatype="string" default_value=""/>
 <Content type="html">
 <![CDATA[
 <html>
@@ -27,8 +29,6 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="fb-page" data-href="https://www.facebook.com/luciocostadf" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/luciocostadf" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/luciocostadf">Moradores do Lúcio Costa / Guará</a></blockquote></div>
-
 <div id="google_sites_facebook_page_plugin" style="background-color:transparent;">
   <img src="http://www.google.com/ig/images/spinner.gif">
 </div>
@@ -38,8 +38,10 @@
   var url = prefs.getString("url");
   var showfaces = prefs.getString("showfaces"); 
   var hidecover = prefs.getString("hidecover");
+  var width = prefs.getString("width");
+  var length = prefs.getString("length");
 
-  var pagePlugin = '<div class="fb-page" data-href="'+url+'" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="'+hidecover+'" data-show-facepile="'+showfaces+'"><blockquote cite="'+url+'" class="fb-xfbml-parse-ignore"><a href="'+url+'">'+pagetitle+'</a></blockquote></div>';
+  var pagePlugin = '<div class="fb-page" data-href="'+url+'" data-tabs="timeline" data-small-header="false" data-adapt-container-width="false" data-width="'+width+'" data-height="'+height+'" data-hide-cover="'+hidecover+'" data-show-facepile="'+showfaces+'"><blockquote cite="'+url+'" class="fb-xfbml-parse-ignore"><a href="'+url+'">'+pagetitle+'</a></blockquote></div>';
 
   var dest = document.getElementById('google_sites_facebook_page_plugin'); 
   dest.innerHTML = pagePlugin; 
