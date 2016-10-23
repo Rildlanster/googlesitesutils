@@ -43,7 +43,7 @@
   var hidecover = prefs.getString("hidecover");
   var pagewidth = prefs.getString("pagewidth");
   var pageheight = prefs.getString("pageheight");
-  var pagePlugin = '<div class="fb-page" data-href="https://www.facebook.com/luciocostadf" data-tabs="timeline" data-width="'+pagewidth+'" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/luciocostadf" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/luciocostadf">Moradores do Lúcio Costa / Guará</a></blockquote></div>';
+  var pagePlugin = '<div class="fb-page" data-href="https://www.facebook.com/luciocostadf" data-tabs="timeline" data-width="'+pagewidth+'" data-height="'+pageheight+'" data-small-header="true" data-adapt-container-width="true" data-hide-cover="'+hidecover+'" data-show-facepile="'+showfaces+'"><blockquote cite="https://www.facebook.com/luciocostadf" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/luciocostadf">Moradores do Lúcio Costa / Guará</a></blockquote></div>';
   var dest = document.getElementById('google_sites_facebook_page_plugin'); 
   dest.innerHTML = pagePlugin; 
 </script>
