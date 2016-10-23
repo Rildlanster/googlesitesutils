@@ -10,8 +10,8 @@
   <EnumValue value="false" display_value="No"/>
   <EnumValue value="true" display_value="Yes"/>
 </UserPref>
-<UserPref name="width" display_name="Page width:" datatype="string" default_value="800"/>
-<UserPref name="height" display_name="Page height:" datatype="string" default_value="350"/>
+<UserPref name="pagewidth" display_name="Page width:" datatype="string" default_value="800"/>
+<UserPref name="pageheight" display_name="Page height:" datatype="string" default_value="350"/>
 <Content type="html">
 <![CDATA[
 <html>
@@ -38,10 +38,10 @@
   var url = prefs.getString("url");
   var showfaces = prefs.getString("showfaces"); 
   var hidecover = prefs.getString("hidecover");
-  var width = prefs.getString("width");
-  var length = prefs.getString("length");
+  var pagewidth = prefs.getString("pagewidth");
+  var pageheight = prefs.getString("pageheight");
 
-  var pagePlugin = '<div class="fb-page" data-href="'+url+'" data-tabs="timeline" data-small-header="false" data-adapt-container-width="false" data-width="'+width+'" data-height="'+height+'" data-hide-cover="'+hidecover+'" data-show-facepile="'+showfaces+'"><blockquote cite="'+url+'" class="fb-xfbml-parse-ignore"><a href="'+url+'">'+pagetitle+'</a></blockquote></div>';
+  var pagePlugin = '<div class="fb-page" data-href="'+url+'" data-tabs="timeline" data-small-header="false" data-adapt-container-width="false" data-width="'+pagewidth+'" data-height="'+pageheight+'" data-hide-cover="'+hidecover+'" data-show-facepile="'+showfaces+'"><blockquote cite="'+url+'" class="fb-xfbml-parse-ignore"><a href="'+url+'">'+pagetitle+'</a></blockquote></div>';
 
   var dest = document.getElementById('google_sites_facebook_page_plugin'); 
   dest.innerHTML = pagePlugin; 
