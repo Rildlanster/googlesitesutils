@@ -2,6 +2,8 @@
 <ModulePrefs title="Google Sites Like Button" width="200" height="20" scrolling="false" title_url="http://luciocosta.estou.com.vc" description="Facebook Page Plugin for Google Sites" author="Rodrigo Nogueira" author_email="rodrigo.b.nogueira@gmail.com" author_affiliation="estou.com.vc" author_location="Brasilia-DF"  author_link="http://estou.com.vc/" directory_title="Facebook Buttons"></ModulePrefs>
 <UserPref name="url" display_name="Facebook Page URL:" datatype="string" default_value=""/>
 <UserPref name="pagetitle" display_name="Page Title:" datatype="string" default_value=""/>
+<UserPref name="pagewidth" display_name="Page width:" datatype="string" default_value="800"/>
+<UserPref name="pageheight" display_name="Page height:" datatype="string" default_value="350"/>
 <UserPref name="showfaces" display_name="Show Faces:" datatype="enum" default_value="false">
   <EnumValue value="false" display_value="No"/>
   <EnumValue value="true" display_value="Yes"/>
@@ -10,8 +12,6 @@
   <EnumValue value="false" display_value="No"/>
   <EnumValue value="true" display_value="Yes"/>
 </UserPref>
-<UserPref name="pagewidth" display_name="Page width:" datatype="string" default_value="800"/>
-<UserPref name="pageheight" display_name="Page height:" datatype="string" default_value="350"/>
   
 <Content type="html">  
 <![CDATA[
