@@ -1,9 +1,9 @@
 <Module>
-<ModulePrefs title="Google Sites Like Button" width="805" height="350" scrolling="true" title_url="http://luciocosta.estou.com.vc" description="Facebook Page Plugin for Google Sites" author="Rodrigo Nogueira" author_email="rodrigo.b.nogueira@gmail.com" author_affiliation="estou.com.vc" author_location="Brasilia-DF"  author_link="http://estou.com.vc/" directory_title="Facebook Utils"></ModulePrefs>
+<ModulePrefs title="Google Sites Like Button" width="505" height="405" scrolling="true" title_url="http://luciocosta.estou.com.vc" description="Facebook Page Plugin for Google Sites" author="Rodrigo Nogueira" author_email="rodrigo.b.nogueira@gmail.com" author_affiliation="estou.com.vc" author_location="Brasilia-DF"  author_link="http://estou.com.vc/" directory_title="Facebook Utils"></ModulePrefs>
 <UserPref name="url" display_name="Facebook Page URL:" datatype="string" default_value="https://www.facebook.com/luciocostadf"/>
 <UserPref name="pagetitle" display_name="Page Title:" datatype="string" default_value="Moradores do Lúcio Costa / Guará"/>
-<UserPref name="pagewidth" display_name="Page width:" datatype="string" default_value="800"/>
-<UserPref name="pageheight" display_name="Page height:" datatype="string" default_value="350"/>
+<UserPref name="pagewidth" display_name="Page width:" datatype="string" default_value="500"/>
+<UserPref name="pageheight" display_name="Page height:" datatype="string" default_value="400"/>
 <UserPref name="showfaces" display_name="Show Faces:" datatype="enum" default_value="false">
   <EnumValue value="false" display_value="No"/>
   <EnumValue value="true" display_value="Yes"/>
@@ -41,7 +41,9 @@
   var url = prefs.getString("url");
   var showfaces = prefs.getString("showfaces"); 
   var hidecover = prefs.getString("hidecover");
-  var pagePlugin = '<div class="fb-page" data-href="https://www.facebook.com/luciocostadf" data-tabs="timeline" data-width="350" data-height="300" data-small-header="false" data-adapt-container-width="false" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/luciocostadf" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/luciocostadf">Moradores do Lúcio Costa / Guará</a></blockquote></div>';
+  var pagewidth = prefs.getString("pagewidth");
+  var pageheight = prefs.getString("pageheight");
+  var pagePlugin = '<div class="fb-page" data-href="https://www.facebook.com/luciocostadf" data-tabs="timeline" data-width="'+pagewidth+'" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/luciocostadf" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/luciocostadf">Moradores do Lúcio Costa / Guará</a></blockquote></div>';
   var dest = document.getElementById('google_sites_facebook_page_plugin'); 
   dest.innerHTML = pagePlugin; 
 </script>
