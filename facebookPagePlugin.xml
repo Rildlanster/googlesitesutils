@@ -10,8 +10,6 @@
   <EnumValue value="false" display_value="No"/>
   <EnumValue value="true" display_value="Yes"/>
 </UserPref>
-<UserPref name="pagewidth" display_name="Page width:" datatype="string" default_value="800"/>
-<UserPref name="pageheight" display_name="Page height:" datatype="string" default_value="350"/>
 <Content type="html">
 <![CDATA[
 <html>
@@ -19,7 +17,6 @@
 <title>Facebook Page Plugin</title>
 </head>
 <body style="background-color:transparent;">
-
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -28,22 +25,17 @@
   js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8&appId=324094871263834";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-
+<div class="fb-page" data-href="https://www.facebook.com/luciocostadf" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/luciocostadf" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/luciocostadf">Moradores do Lúcio Costa / Guará</a></blockquote></div>
 <div id="google_sites_facebook_page_plugin" style="background-color:transparent;">
   <img src="http://www.google.com/ig/images/spinner.gif">
 </div>
-
 <script type="text/javascript"> 
   // Get userprefs 
   var prefs = new gadgets.Prefs(); 
   var url = prefs.getString("url");
   var showfaces = prefs.getString("showfaces"); 
   var hidecover = prefs.getString("hidecover");
-  var pagewidth = prefs.getString("pagewidth");
-  var pageheight = prefs.getString("pageheight");
-
-  var pagePlugin = '<div class="fb-page" data-href="'+url+'" data-tabs="timeline" data-small-header="false" data-adapt-container-width="false" data-width="'+pagewidth+'" data-height="'+pageheight+'" data-hide-cover="'+hidecover+'" data-show-facepile="'+showfaces+'"><blockquote cite="'+url+'" class="fb-xfbml-parse-ignore"><a href="'+url+'">'+pagetitle+'</a></blockquote></div>';
-
+  var pagePlugin = '<div class="fb-page" data-href="'+url+'" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="'+hidecover+'" data-show-facepile="'+showfaces+'"><blockquote cite="'+url+'" class="fb-xfbml-parse-ignore"><a href="'+url+'">'+pagetitle+'</a></blockquote></div>';
   var dest = document.getElementById('google_sites_facebook_page_plugin'); 
   dest.innerHTML = pagePlugin; 
 </script>
