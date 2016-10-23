@@ -10,6 +10,8 @@
   <EnumValue value="false" display_value="No"/>
   <EnumValue value="true" display_value="Yes"/>
 </UserPref>
+<UserPref name="pagewidth" display_name="Page width:" datatype="string" default_value="800"/>
+<UserPref name="pageheight" display_name="Page height:" datatype="string" default_value="350"/>
   
 <Content type="html">  
 <![CDATA[
