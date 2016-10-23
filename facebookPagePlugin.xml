@@ -32,6 +32,7 @@
 <div id="google_sites_facebook_page_plugin" style="background-color:transparent;">
   <img src="http://www.google.com/ig/images/spinner.gif">
 </div>
+
 <script type="text/javascript"> 
   // Get userprefs 
   var prefs = new gadgets.Prefs(); 
